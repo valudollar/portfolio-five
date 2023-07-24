@@ -11,18 +11,55 @@
   align-items: center;
   font-family: "Lato", sans-serif;
 }
-.navBar {
-  width: 90%;
-  height: 4rem;
-  box-shadow: 0 2px 2px -2px #000000;
+
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 3rem;
+  width: 80%;
+  align-items: center;
+}
+.name {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 30%;
+  margin: none;
+  font-size: 1.5rem;
+}
+.links {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: none;
+  font-size: 1.5rem;
+}
+.linkItem {
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}
+
+.topline {
+  width: 80%;
+
+  border: 0.01rem solid black;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.bottomline {
+  width: 80%;
+
+  border: 0.01rem solid black;
+  margin-top: 0.5rem;
   margin-bottom: 4rem;
-  background-color: #fdfdfd;
 }
 
 .CardRow {
   display: flex;
   flex-wrap: wrap;
-  padding: 1rem;
+  width: 80%;
+  /* padding: 1rem; */
 
   /* background-color: aqua; */
 }
@@ -70,8 +107,8 @@
 
 .itemTitle {
   font-weight: 300;
-  font-size: 2rem;
-  margin: 0.5rem;
+  font-size: 1.7rem;
+  margin: 0.8rem;
 }
 .CardTop {
   background-color: #2644ba;

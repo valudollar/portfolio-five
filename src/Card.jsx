@@ -1,4 +1,4 @@
-function Card() {
+function Card(props) {
   return (
     <>
       <div className="CardMain">
@@ -6,7 +6,7 @@ function Card() {
           <div className="CardTop"></div>
         </div>
         <div className="CardPaper">
-          <p className="itemTitle">peer evaluation platform</p>
+          <p className="itemTitle">{props.title}</p>
         </div>
         <div className="CardBottom"></div>
       </div>
