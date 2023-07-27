@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
+import dnatapres from "./assets/dnatapres.jpg";
 
 function Card(props) {
   let tags = props.tags.split(",");
@@ -10,7 +11,13 @@ function Card(props) {
         <div className="CardBody">
           <div className="CardTop"></div>
           <div className="CardBottom">
-            <div className="image"></div>
+            <img className="image" src={props.image}></img>
+            <p className="subtext">{props.subtext}</p>
+            <p className="description">
+              Project spanned across 14 weeks and 4 sprint cycles using Agile
+              Methology. ject spanned across 14 weeks and 4 sprint cycles using
+              Agile Methology. using Agile Methology
+            </p>
             <div className="tagBox">
               {tags.map((tag, id) => (
                 <div className="tag">
@@ -20,12 +27,6 @@ function Card(props) {
                 </div>
               ))}
             </div>
-            <p className=""> Mentored by Google</p>
-            <p className="description">
-              Project spanned across 14 weeks and 4 sprint cycles using Agile
-              Methology. ject spanned across 14 weeks and 4 sprint cycles using
-              Agile Methology. using Agile Methology
-            </p>
           </div>
         </div>
         <div className="CardPaper">

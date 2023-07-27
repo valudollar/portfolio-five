@@ -113,6 +113,7 @@
   justify-content: center;
   align-items: center;
   width: 90%;
+  flex-wrap: wrap;
 }
 .left {
   width: 20%;
@@ -216,6 +217,7 @@
   background-color: #2644ba;
   width: 100%;
   height: 24%;
+  /* object-fit: cover; */
 }
 .CardBottom {
   width: 100%;
@@ -235,8 +237,8 @@
   border: #11100e solid 1px;
   color: #2644ba;
   border-radius: 1rem;
-  margin: 0.4rem;
-  font-size: 0.6rem;
+  margin: 0.2rem;
+  font-size: 0.7rem;
 }
 .tagBox {
   display: flex;
@@ -253,7 +255,12 @@
   height: 40%;
   background-color: #2644ba;
   margin-top: 0.7rem;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.3rem;
+  object-fit: cover;
+  border: solid 0.1rem black;
+}
+.subtext {
+  font-size: 0.9rem;
 }
 .description {
   font-weight: 300;

@@ -4,6 +4,8 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { motion } from "framer-motion";
 import Card from "./Card";
+import dnatapres from "./assets/dnatapres.jpg";
+import sds from "./assets/sds.jpg";
 
 function App() {
   return (
@@ -34,14 +36,36 @@ function App() {
       <hr className="bottomline"></hr>
       <section className="landing">
         <div className="hello">
-          <p className="helloText">hello, valu here. </p>
+          <motion.p
+            // initial={{ y: 0, opacity: 0 }}
+            // animate={{ y: 10, opacity: 1 }}
+            // transition={{
+            //   ease: "linear",
+            //   type: "spring",
+            //   stiffness: 50,
+            //   duration: 2,
+            // }}
+            className="helloText"
+          >
+            hello, valu here.{" "}
+          </motion.p>
         </div>
         <div className="transition">
-          <div className="transitionText">
+          <motion.div
+            initial={{ y: 0, opacity: 0 }}
+            animate={{ y: 10, opacity: 1 }}
+            transition={{
+              ease: "linear",
+              type: "spring",
+              stiffness: 50,
+              duration: 2,
+            }}
+            className="transitionText"
+          >
             <p>front-end development,</p>
             <p>user-centric design</p>
             <p>& illustration.</p>
-          </div>
+          </motion.div>
         </div>
       </section>
       <section className="section">
@@ -62,14 +86,20 @@ function App() {
             <Card
               title="peer evaluation platform"
               tags="bootstrap,css,javascript,reactjs,selenium,cucumber"
+              image={sds}
+              subtext="Mentored by Google"
             ></Card>
             <Card
               title="ride hailing simulation"
               tags="tag 1,tag 2,tag 3,tag 4"
+              image={dnatapres}
+              subtext="Partnered with Grab"
             ></Card>
             <Card
               title="handcarry baggage checker"
               tags="tag 1,tag 2,tag 3,tag 4"
+              image={dnatapres}
+              subtext="Partnered with dnata"
             ></Card>
             {/* <Card
               title="deadlift form checker"
