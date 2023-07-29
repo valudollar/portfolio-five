@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Card from "./Card";
 import dnatapres from "./assets/dnatapres.jpg";
 import sds from "./assets/sds.jpg";
+import peer from "./assets/peer.svg";
 
 function App() {
   return (
@@ -40,7 +41,13 @@ function App() {
         </div>
       </section>
       <section className="projects">
-        <div className="whitebg"></div>
+        <div className="whitebgtop"></div>
+        <div className="whitebgbot"></div>
+        <div className="projectsbg">
+          <h1>
+            projects <br /> projects
+          </h1>
+        </div>
         <div className="projectscontent">
           <div className="labeldiv">
             <div className="label">
@@ -48,8 +55,80 @@ function App() {
             </div>
           </div>
           <div className="cardsdiv">
-            <Card />
-            <Card />
+            <Card
+              title="peer evaluation platform"
+              tags="web app,js,react,agile,css,bootstrap,selenium,cucumber,user stories,figma"
+              image={peer}
+              subtext="Mentored by Google"
+              buttons="documentation,github"
+            />
+            <Card
+              title="handcarry baggage checker"
+              tags="product design,3d printing,fusion360,CAD,assembly,lasercut,arduino"
+              image={peer}
+              subtext="Partnered with dnata"
+              buttons="documentation,github"
+            />
+            <Card
+              title="ride hailing simulation"
+              tags="agent-based simulation,mapbox,css,mantine,react,js"
+              image={peer}
+              subtext="Partnered with Grab"
+              buttons="documentation,github"
+            />
+            <Card
+              title="deadlift form checker"
+              tags="react,js,user study,AB testing,hieuristic eval,mantine,css,mobile app"
+              image={peer}
+              subtext="HCI & AI"
+              buttons="documentation,github"
+            />
+          </div>
+        </div>
+      </section>
+      <section className="projects">
+        <div className="whitebgtop"></div>
+        <div className="whitebgbot"></div>
+        <div className="projectsbg">
+          <h1>
+            projects <br /> projects
+          </h1>
+        </div>
+        <div className="projectscontent">
+          <div className="labeldiv">
+            <div className="label">
+              <p>projects</p>
+            </div>
+          </div>
+          <div className="cardsdiv">
+            <Card
+              title="peer evaluation platform"
+              tags="web app,js,react,agile,css,bootstrap,selenium,cucumber,user stories,figma"
+              image={peer}
+              subtext="Mentored by Google"
+              buttons="documentation,github"
+            />
+            <Card
+              title="handcarry baggage checker"
+              tags="product design,3d printing,fusion360,CAD,assembly,lasercut,arduino"
+              image={peer}
+              subtext="Partnered with dnata"
+              buttons="documentation,github"
+            />
+            <Card
+              title="ride hailing simulation"
+              tags="agent-based simulation,mapbox,css,mantine,react,js"
+              image={peer}
+              subtext="Partnered with Grab"
+              buttons="documentation,github"
+            />
+            <Card
+              title="deadlift form checker"
+              tags="react,js,user study,AB testing,hieuristic eval,mantine,css,mobile app"
+              image={peer}
+              subtext="HCI & AI"
+              buttons="documentation,github"
+            />
           </div>
         </div>
       </section>
