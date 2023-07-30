@@ -54,12 +54,14 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  /* border-color: #646cff; */
+  background-color: #fdc242;
+  color: #2644ba;
 }
 button:focus,
-button:focus-visible {
+/* button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 p {
   margin: 0;

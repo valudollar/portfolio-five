@@ -49,7 +49,7 @@ function Card(props) {
           </div>
           <div className="infodiv">
             {combined_arr.map(([link, button], id) => (
-              <a href={link} value={link} key={id}>
+              <a href={link} value={link} key={id} target="_blank">
                 <button key={id} value={button} className="infobutton">
                   {button}
                 </button>
