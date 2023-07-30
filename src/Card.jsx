@@ -1,11 +1,27 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import sds from "./assets/sds.jpg";
 
 function Card(props) {
   let tags = props.tags.split(",");
-  console.log(tags, "hello");
   let buttons = props.buttons.split(",");
+  let links = props.links.split(",");
+
+  // Use the useState hook to manage the combined_arr state
+  const [combined_arr, setCombinedArr] = useState([]);
+
+  useEffect(() => {
+    let combinedArr = []; // Create a local variable to hold the combined array
+    for (let i = 0; i < links.length; i++) {
+      const link = links[i];
+      const button = buttons[i];
+      const list = [link, button];
+      combinedArr.push(list);
+    }
+    // Update the state using the local variable
+    setCombinedArr(combinedArr);
+    console.log(combinedArr);
+  }, []);
 
   return (
     <>
@@ -32,48 +48,16 @@ function Card(props) {
             ))}
           </div>
           <div className="infodiv">
-            {/* <button className="infobutton">documentation</button> */}
-            {buttons.map((b, id) => (
-              <button key={id} value={b} className="infobutton">
-                {b}
-              </button>
+            {combined_arr.map(([link, button], id) => (
+              <a href={link} value={link} key={id}>
+                <button key={id} value={button} className="infobutton">
+                  {button}
+                </button>
+              </a>
             ))}
           </div>
         </div>
       </div>
-      {/* <div className="CardMain">
-        <div className="CardBody">
-          <div className="CardTop"></div>
-          <div className="CardBottom">
-            <img className="image" src={props.image}></img>
-            <p className="subtext">{props.subtext}</p>
-            <p className="description">
-              a platform for instructors to manage evaluations, monitor
-              students' progress and for students to complete evaluations
-              conducively
-            </p>
-            <div className="tagBox">
-              {tags.map((tag, id) => (
-                <div className="tag">
-                  <p className="tagTitle" key={id} value={tag}>
-                    {tag}
-                  </p>
-                </div>
-              ))}
-            </div>
-            <div className="linkbox">
-              {buttons.map((b, id) => (
-                <button className="linkbutton" key={id} value={b}>
-                  {b}
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
-        <div className="CardPaper">
-          <p className="itemTitle">{props.title}</p>
-        </div>
-      </div> */}
     </>
   );
 }
