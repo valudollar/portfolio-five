@@ -141,7 +141,7 @@
 .projects {
   width: 100%;
   background-color: #e2e5eb;
-  height: 240vh;
+  height: 100rem;
   position: relative;
   display: flex;
   justify-content: center;
@@ -150,7 +150,7 @@
   min-height: fit-content;
 }
 
-.work {
+/* .work {
   width: 100%;
   background-color: #e2e5eb;
   height: 150vh;
@@ -158,7 +158,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 .whitebgtop {
   width: 100%;
   height: 20%;
@@ -353,7 +353,7 @@
 }
 .connect {
   width: 100%;
-  height: 60vh;
+  height: 20rem;
   background-color: #e2e5eb;
   display: flex;
   justify-content: center;
@@ -419,7 +419,7 @@
 }
 .other {
   width: 100%;
-  height: 130vh;
+  height: 55rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -494,77 +494,152 @@
   #root {
   }
 
-  .projects {
-  }
-  .projectscontent {
-  }
   .labeldiv {
-    /* width: 20%; */
     width: 10%;
-    /* background-color: aqua; */
   }
-  .label {
-    /* width: min-content;
-    padding: 0.5rem;
-    background-color: #2644ba;
-    color: #f9fcff;
-    font-size: 1.4rem;
-    margin-top: 2rem; */
-  }
-  .cardsdiv {
-    /* background-color: #f86737; */
-    /* width: 100%; */
-    /* background-color: #40589b; */
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; */
-  }
+
   .cardscontainer {
     width: 90%;
-    /* width: 80%;
-    display: flex;
-    flex-direction: column; */
   }
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1090px) {
   #root {
-    background-color: #40589b;
+    /* background-color: #40589b; */
   }
 
   .projects {
+    height: 86rem;
   }
-  .projectscontent {
+
+  .label {
+    font-size: 1rem;
   }
+  .cardMain {
+    width: 20rem;
+    height: 25rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    /* margin-bottom: 1rem; */
+  }
+  .cardTitle {
+    font-size: 1.1rem;
+  }
+  .cardBody {
+    height: 22rem;
+    font-size: 0.7rem;
+  }
+  .cardImage {
+    height: 9rem;
+  }
+  .tag {
+    border-radius: 6px;
+  }
+  .connect {
+    height: 15rem;
+  }
+  .connectioncard {
+    width: 18rem;
+    height: 11rem;
+  }
+  .connectioncardheader {
+    height: 3rem;
+  }
+  .connectioncardbody {
+    width: 100%;
+    height: 8rem;
+  }
+
+  .connecttextdiv {
+    width: 95%;
+    height: 60%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .connecttext {
+    margin-top: 0.5rem;
+    text-align: start;
+    font-size: 1.2rem;
+  }
+  .connectbuttons {
+    height: 40%;
+    font-size: 0.8rem;
+  }
+  .other {
+    height: 50rem;
+  }
+  .othertitle {
+    margin-bottom: 1rem;
+    color: #2644ba;
+    font-size: 1.5rem;
+  }
+
+  .othercardMain {
+    width: 16rem;
+    height: 18rem;
+    margin: 0.8rem;
+  }
+
+  .othercardBody {
+    height: 15rem;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .othercardImage {
+    height: 7rem;
+    width: 90%;
+    margin-top: 0.7rem;
+  }
+  .othercardtagdiv {
+    height: 25%;
+  }
+  .othercardbuttons {
+    height: 20%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 855px) {
+  #root {
+    background-color: #fdc242;
+  }
+
+  .projects {
+    height: 86rem;
+  }
+
   .labeldiv {
-    /* width: 20%; */
-    width: 10%;
-    /* background-color: aqua; */
   }
   .label {
-    /* width: min-content;
-    padding: 0.5rem;
-    background-color: #2644ba;
-    color: #f9fcff;
-    font-size: 1.4rem;
-    margin-top: 2rem; */
+    font-size: 1rem;
   }
-  .cardsdiv {
-    /* background-color: #f86737; */
-    /* width: 100%; */
-    /* background-color: #40589b; */
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; */
+
+  .cardMain {
+    width: 20rem;
+    height: 25rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    /* margin-bottom: 1rem; */
   }
-  .cardscontainer {
-    width: 90%;
-    /* width: 80%;
-    display: flex;
-    flex-direction: column; */
+  .cardTitle {
+    font-size: 1.1rem;
+  }
+  .cardBody {
+    height: 22rem;
+    font-size: 0.7rem;
+  }
+  .cardImage {
+    height: 9rem;
+  }
+  .tag {
+    border-radius: 6px;
+  }
+}
+
+@media only screen and (max-width: 925px) {
+  .hello {
+    font-size: 3.5rem;
   }
 }
