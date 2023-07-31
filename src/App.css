@@ -138,6 +138,12 @@
   /* background-color: #fdc242; */
 }
 
+.mobilelabeldiv {
+  visibility: hidden;
+}
+.mobilelabel {
+}
+
 .projects {
   width: 100%;
   background-color: #e2e5eb;
@@ -576,12 +582,12 @@
 
   .othercardMain {
     width: 16rem;
-    height: 18rem;
+    height: 19rem;
     margin: 0.8rem;
   }
 
   .othercardBody {
-    height: 15rem;
+    height: 16rem;
     width: 100%;
     font-size: 0.8rem;
   }
@@ -592,54 +598,92 @@
     margin-top: 0.7rem;
   }
   .othercardtagdiv {
-    height: 25%;
+    height: 20%;
   }
   .othercardbuttons {
-    height: 20%;
+    height: 25%;
     margin-top: 0.5rem;
     margin-bottom: 0.8rem;
-  }
-}
-
-@media only screen and (max-width: 855px) {
-  #root {
-    background-color: #fdc242;
-  }
-
-  .projects {
-    height: 86rem;
-  }
-
-  .labeldiv {
-  }
-  .label {
-    font-size: 1rem;
-  }
-
-  .cardMain {
-    width: 20rem;
-    height: 25rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    /* margin-bottom: 1rem; */
-  }
-  .cardTitle {
-    font-size: 1.1rem;
-  }
-  .cardBody {
-    height: 22rem;
-    font-size: 0.7rem;
-  }
-  .cardImage {
-    height: 9rem;
-  }
-  .tag {
-    border-radius: 6px;
   }
 }
 
 @media only screen and (max-width: 925px) {
   .hello {
     font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #root {
+    /* background-color:; */
+  }
+  .titletext {
+    font-size: 1.5rem;
+  }
+  .landingcontent {
+    /* flex-wrap: wrap; */
+    /* position: absolute; */
+    overflow: hidden;
+  }
+  .landing {
+    height: 18rem;
+  }
+  .landingbg {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .landingtextdiv {
+    width: 80%;
+  }
+  .landingimagediv {
+    width: 10%;
+  }
+  .landingimage {
+    height: 5rem;
+    width: 5rem;
+    visibility: hidden;
+  }
+  .hello {
+    /* position: absolute; */
+    margin-left: 1rem;
+    font-size: 2rem;
+    line-height: 1.8rem;
+    /* margin-top: 0.5rem; */
+  }
+  .intro {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    line-height: 2rem;
+    margin-top: 0.5rem;
+  }
+  .labeldiv {
+    background-color: #40589b;
+    visibility: hidden;
+    width: 0%;
+  }
+  .mobilelabeldiv {
+    visibility: visible;
+    background-color: #2644ba;
+    height: min-content;
+    width: min-content;
+    margin-left: 1rem;
+    margin-bottom: 0;
+  }
+  .mobilelabel {
+    color: #f9fcff;
+    padding: 0.5rem;
+  }
+  .cardscontainer {
+    width: 100%;
+  }
+  .cardMain {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .projects {
+    height: 165rem;
+  }
+  .other {
+    height: 110rem;
   }
 }

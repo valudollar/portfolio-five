@@ -71,6 +71,11 @@ function App() {
           </h1>
         </div>
         <div className="projectscontent">
+          <div className="mobilelabeldiv">
+            <div className="mobilelabel">
+              <p>projects</p>
+            </div>
+          </div>
           <div className="labeldiv">
             <div className="label">
               <p>projects</p>
