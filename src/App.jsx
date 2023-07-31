@@ -2,8 +2,9 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import Card from "./Card";
+import OtherCard from "./OtherCard";
 import peer from "./assets/peer.svg";
 import ride from "./assets/ride.svg";
 import pds from "./assets/pds.svg";
@@ -37,7 +38,26 @@ function App() {
             </p>
           </div>
           <div className="landingimagediv">
-            <img src={star} className="landingimage"></img>
+            {/* <img src={star} className="landingimage"></img> */}
+            <motion.img
+              src={star}
+              className="landingimage"
+              animate={
+                {
+                  // scale: [1, 2, 1],
+                  // rotate: [0, 180],
+                }
+              }
+              transition={
+                {
+                  // duration: 2,
+                  // ease: "easeInOut",
+                  // times: [0, 0.2, 0.5, 0.8, 1],
+                  // repeat: Infinity,
+                  // repeatDelay: 1,
+                }
+              }
+            />
             {/* <div className="landingimage"></div> */}
           </div>
         </div>
@@ -78,7 +98,7 @@ function App() {
             <div className="cardsdiv">
               <Card
                 title="ride hailing simulation"
-                tags="agent-based simulation,mapbox,css,mantine,react,js"
+                tags="agent-based simulation,mapbox,css,mantine,react,js, web app"
                 image={ride}
                 subtext="partnered with Grab"
                 links="https://github.com/HASSRaccoon/Systems-DS-Grab-Simulation"
@@ -107,8 +127,8 @@ function App() {
                 tags="react,js,vite,vercel,css,pixel art,wip"
                 image={peer}
                 subtext="passion project"
-                links="https://sites.google.com/view/sds-team-4/home,https://valuportfolio2023.vercel.app/"
-                buttons="make your quest,github"
+                links="https://quest-maker.vercel.app/,https://github.com/valudollar/quest-maker"
+                buttons="make a quest,github"
               />
             </div>
             {/* <div className="cardsdiv"> */}
@@ -133,6 +153,9 @@ function App() {
         </div>
       </section>
       <section className="connect">
+        {/* <div className="connectbg">
+          <p>connection</p>
+        </div> */}
         <div className="connectioncard">
           <div className="cardHeader">
             <div className="cardTitle">
@@ -145,9 +168,13 @@ function App() {
             </div>
           </div>
           <div className="connectioncardbody">
-            <p className="connecttext"></p>
-            <div className="">
-              <button className="infobutton">instagram</button>
+            <div className="connecttextdiv">
+              <p className="connecttext">
+                hi, i would love it if you reached out to me!
+              </p>
+            </div>
+            <div className="connectbuttons">
+              {/* <button className="infobutton">instagram</button> */}
               <button className="infobutton">github</button>
               <button className="infobutton">telegram</button>
               <button className="infobutton">email</button>
@@ -155,33 +182,52 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="other"></section>
+      <section className="other">
+        <div className="othertitle">
+          <p>see more of my work </p>
+        </div>
+        <div className="othercardsrow">
+          <OtherCard
+            title="pixel art zoo"
+            // image={peer}
+            tags="pixel art,animation"
+            links="https://quest-maker.vercel.app/"
+            buttons="visit my zoo"
+          />
+          <OtherCard
+            title="cat paintings"
+            // image={peer}
+            tags="watercolour,painting"
+            links="https://www.instagram.com/sheeshcat/"
+            buttons="instagram"
+          />
+          <OtherCard
+            title="grapefoot studio"
+            // image={peer}
+            tags="epoxy resin,keycaps,small business"
+            links="https://www.instagram.com/grapefoot.studio/"
+            buttons="instagram"
+          />
+        </div>
+        <div className="othercardsrow">
+          <OtherCard
+            title="illustrations"
+            // image={peer}
+            tags="digital,procreate,line art"
+            links="https://quest-maker.vercel.app/"
+            buttons="work in progress"
+          />
+          <OtherCard
+            title="valubahloo"
+            // image={peer}
+            tags="small business,polymer clay,uv resin,jewelley,keycaps"
+            links="https://www.instagram.com/valubahloo"
+            buttons="instagram"
+          />
+        </div>
+      </section>
     </>
   );
 }
 
 export default App;
-
-{
-  /* <Card
-              title="peer evaluation platform"
-              tags="bootstrap,css,javascript,reactjs,selenium,cucumber"
-              image={sds}
-              subtext="Mentored by Google"
-              buttons="documentation,github"
-            ></Card>
-            <Card
-              title="ride hailing simulation"
-              tags="tag 1,tag 2,tag 3,tag 4"
-              image={dnatapres}
-              subtext="Partnered with Grab"
-              buttons="github"
-            ></Card>
-            <Card
-              title="handcarry baggage checker"
-              tags="tag 1,tag 2,tag 3,tag 4"
-              image={dnatapres}
-              subtext="Partnered with dnata"
-              buttons="video"
-            ></Card> */
-}
