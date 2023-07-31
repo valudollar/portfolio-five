@@ -9,6 +9,7 @@ import peer from "./assets/peer.svg";
 import ride from "./assets/ride.svg";
 import pds from "./assets/pds.svg";
 import star from "./assets/star.svg";
+import smile from "./assets/smile.svg";
 
 function App() {
   return (
@@ -40,7 +41,7 @@ function App() {
           <div className="landingimagediv">
             {/* <img src={star} className="landingimage"></img> */}
             <motion.img
-              src={star}
+              src={smile}
               className="landingimage"
               animate={
                 {

@@ -138,16 +138,10 @@
   /* background-color: #fdc242; */
 }
 
-.mobilelabeldiv {
-  visibility: hidden;
-}
-.mobilelabel {
-}
-
 .projects {
   width: 100%;
   background-color: #e2e5eb;
-  height: 100rem;
+  height: 110rem;
   position: relative;
   display: flex;
   justify-content: center;
@@ -198,6 +192,12 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+.mobilelabeldiv {
+  visibility: hidden;
+  width: 0%;
+}
+.mobilelabel {
 }
 .labeldiv {
   width: 20%;
@@ -613,7 +613,7 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   #root {
     /* background-color:; */
   }
