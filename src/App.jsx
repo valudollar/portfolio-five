@@ -176,14 +176,26 @@ function App() {
           <div className="connectioncardbody">
             <div className="connecttextdiv">
               <p className="connecttext">
-                hi, i would love it if you reached out to me!
+                hi, thanks for making it here, i would love to connect with you!
               </p>
             </div>
             <div className="connectbuttons">
               {/* <button className="infobutton">instagram</button> */}
-              <button className="infobutton">github</button>
-              <button className="infobutton">telegram</button>
-              <button className="infobutton">email</button>
+              <a href="https://github.com/valudollar/">
+                <button className="infobutton">github</button>
+              </a>
+              <a href="https://t.me/grapejiz">
+                <button className="infobutton">telegram</button>
+              </a>
+              <a href="mailto:valerie.luxuanhui@gmail.com">
+                <button className="infobutton">email</button>
+              </a>
+              <a href="https://drive.google.com/file/d/1UvSV8TL7j0i87jH0pNXCGJpQx29jl0TB/view?usp=sharing">
+                <button className="infobutton">resume</button>
+              </a>
+              <a href="https://drive.google.com/file/d/1e40EUTIy0DJ74HZ-9KNRANaOsmhy4EOG/view?usp=sharing">
+                <button className="infobutton">portfolio</button>
+              </a>
             </div>
           </div>
         </div>
@@ -194,34 +206,34 @@ function App() {
         </div>
         <div className="othercardsrow">
           <OtherCard
-            title="pixel art zoo"
-            // image={peer}
-            tags="pixel art,animation"
-            links="https://quest-maker.vercel.app/"
-            buttons="visit my zoo"
-          />
-          <OtherCard
-            title="cat paintings"
-            // image={peer}
-            tags="watercolour,painting"
-            links="https://www.instagram.com/sheeshcat/"
-            buttons="instagram"
-          />
-          <OtherCard
             title="grapefoot studio"
             // image={peer}
             tags="epoxy resin,keycaps,small business"
             links="https://www.instagram.com/grapefoot.studio/"
             buttons="instagram"
           />
+          <OtherCard
+            title="pixel art zoo"
+            // image={peer}
+            tags="pixel art,animation"
+            links="https://quest-maker.vercel.app/,https://www.instagram.com/bubble_pixels/"
+            buttons="visit my zoo,instagram"
+          />
         </div>
         <div className="othercardsrow">
-          <OtherCard
+          {/* <OtherCard
             title="illustrations"
             // image={peer}
             tags="digital,procreate,line art"
             links="https://quest-maker.vercel.app/"
             buttons="work in progress"
+          /> */}
+          <OtherCard
+            title="cat paintings"
+            // image={peer}
+            tags="watercolour,painting"
+            links="https://www.instagram.com/sheeshcat/"
+            buttons="instagram"
           />
           <OtherCard
             title="valubahloo"

@@ -141,7 +141,7 @@
 .projects {
   width: 100%;
   background-color: #e2e5eb;
-  height: 110rem;
+  height: 100rem;
   position: relative;
   display: flex;
   justify-content: center;
@@ -320,13 +320,8 @@
   flex-wrap: wrap;
   flex-direction: row;
   width: 90%;
-
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 .tag {
-  /* background-color: #40589b; */
-  /* color: #2644ba; */
   padding: 0.3rem;
   /* border: #40589b 0.2rem solid; */
   color: #40589b;
@@ -350,11 +345,12 @@
 }
 .infobutton {
   padding: 0.4rem;
-  color: #40589b;
-  /* background-color: #fdc242; */
-  border: #fdc242 0.2rem solid;
+  background-color: #fdc242;
+  color: #2644ba;
+
+  /* border: #fdc242 0.2rem solid; */
   margin-left: 0.5rem;
-  background-color: transparent;
+
   font-weight: 600;
 }
 .connect {
@@ -366,19 +362,10 @@
   align-items: center;
   position: relative;
 }
-/* 
-.connectbg {
-  position: absolute;
-  color: #40589b;
-  opacity: 5%;
-  top: 0;
-  left: 0;
-  text-align: start;
-  width: 90%;
-} */
+
 .connectioncard {
-  width: 24rem;
-  height: 15rem;
+  width: 26rem;
+  height: 14rem;
   background-color: #f9fcff;
   border-bottom: #2644ba 0.2rem solid;
   border-left: #2644ba 0.2rem solid;
@@ -397,7 +384,7 @@
   flex-direction: column;
   /* align-items: flex-start; */
   width: 100%;
-  height: 12rem;
+  height: 11rem;
   justify-content: center;
   align-items: center;
 }
@@ -448,7 +435,6 @@
 .othercardMain {
   width: 20rem;
   height: 22rem;
-  /* background-color: #2644ba; */
   border-bottom: #2644ba 0.2rem solid;
   border-left: #2644ba 0.2rem solid;
   border-right: #2644ba 0.2rem solid;
@@ -458,12 +444,11 @@
 .othercardBody {
   height: 19rem;
   width: 100%;
-  /* background-color: antiquewhite; */
+
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+
   align-items: center;
-  /* background-color: #e2e5eb; */
 }
 
 .othercardImage {
@@ -497,9 +482,6 @@
 }
 
 @media only screen and (max-width: 1210px) {
-  #root {
-  }
-
   .labeldiv {
     width: 10%;
   }
@@ -510,10 +492,6 @@
 }
 
 @media only screen and (max-width: 1090px) {
-  #root {
-    /* background-color: #40589b; */
-  }
-
   .projects {
     height: 86rem;
   }
@@ -526,7 +504,6 @@
     height: 25rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    /* margin-bottom: 1rem; */
   }
   .cardTitle {
     font-size: 1.1rem;
@@ -545,7 +522,7 @@
     height: 15rem;
   }
   .connectioncard {
-    width: 18rem;
+    width: 20rem;
     height: 11rem;
   }
   .connectioncardheader {
@@ -569,7 +546,7 @@
   }
   .connectbuttons {
     height: 40%;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .other {
     height: 50rem;
@@ -604,6 +581,7 @@
     height: 25%;
     margin-top: 0.5rem;
     margin-bottom: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -614,15 +592,10 @@
 }
 
 @media only screen and (max-width: 500px) {
-  #root {
-    /* background-color:; */
-  }
   .titletext {
     font-size: 1.5rem;
   }
   .landingcontent {
-    /* flex-wrap: wrap; */
-    /* position: absolute; */
     overflow: hidden;
   }
   .landing {
@@ -644,11 +617,9 @@
     visibility: hidden;
   }
   .hello {
-    /* position: absolute; */
     margin-left: 1rem;
     font-size: 2rem;
     line-height: 1.8rem;
-    /* margin-top: 0.5rem; */
   }
   .intro {
     font-size: 1.5rem;
@@ -684,6 +655,9 @@
     height: 165rem;
   }
   .other {
-    height: 110rem;
+    height: 90rem;
+  }
+  .projectsbg {
+    font-size: 2rem;
   }
 }

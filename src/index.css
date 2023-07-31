@@ -55,8 +55,8 @@ button {
 }
 button:hover {
   /* border-color: #646cff; */
-  background-color: #fdc242;
-  color: #2644ba;
+  background-color: #f86737;
+  color: #f9f9f9;
 }
 button:focus,
 /* button:focus-visible {
