@@ -190,7 +190,7 @@ function App() {
               <a href="mailto:valerie.luxuanhui@gmail.com">
                 <button className="infobutton">email</button>
               </a>
-              <a href="https://drive.google.com/file/d/1UvSV8TL7j0i87jH0pNXCGJpQx29jl0TB/view?usp=sharing">
+              <a href="https://drive.google.com/file/d/1XD9ow6ML79cxY9Z2kmn2kOGM4VAv5I6o/view?usp=sharing">
                 <button className="infobutton">resume</button>
               </a>
               <a href="https://drive.google.com/file/d/1e40EUTIy0DJ74HZ-9KNRANaOsmhy4EOG/view?usp=sharing">
