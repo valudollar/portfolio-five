@@ -8,8 +8,12 @@ import OtherCard from "./OtherCard";
 import peer from "./assets/peer.svg";
 import ride from "./assets/ride.svg";
 import pds from "./assets/pds.svg";
-import star from "./assets/star.svg";
+import quest from "./assets/quest.svg";
 import smile from "./assets/smile.svg";
+import dino from "./assets/dino.svg";
+import key from "./assets/keycap.svg";
+import dl from "./assets/deadlift.svg";
+import pixel from "./assets/pixel.svg";
 
 function App() {
   return (
@@ -113,7 +117,7 @@ function App() {
               <Card
                 title="deadlift form checker"
                 tags="react,js,user study,AB testing,hieuristic eval,mantine,css,mobile app"
-                image={peer}
+                image={dl}
                 subtext="human computer interactions"
                 links="https://dai.sutd.edu.sg/dai-projects/weightlift-buddy/,https://github.com/ry2001/WeightliftBuddy1"
                 buttons="video,github"
@@ -123,7 +127,7 @@ function App() {
               <Card
                 title="dinosaur quiz game"
                 tags="react,js,netlify,vite,css,pixel art,animation,wip"
-                image={peer}
+                image={dino}
                 subtext="passion project"
                 links="https://dino-master.netlify.app/,https://github.com/valudollar/dino-master"
                 buttons="play the game,github"
@@ -131,7 +135,7 @@ function App() {
               <Card
                 title="quest maker"
                 tags="react,js,vite,vercel,css,pixel art,wip"
-                image={peer}
+                image={quest}
                 subtext="passion project"
                 links="https://quest-maker.vercel.app/,https://github.com/valudollar/quest-maker"
                 buttons="make a quest,github"
@@ -207,16 +211,16 @@ function App() {
         <div className="othercardsrow">
           <OtherCard
             title="grapefoot studio"
-            // image={peer}
+            image={key}
             tags="epoxy resin,keycaps,small business"
             links="https://www.instagram.com/grapefoot.studio/"
             buttons="instagram"
           />
           <OtherCard
             title="pixel art zoo"
-            // image={peer}
-            tags="pixel art,animation"
-            links="https://quest-maker.vercel.app/,https://www.instagram.com/bubble_pixels/"
+            image={pixel}
+            tags="pixel art,animation,procreate"
+            links="https://pixel-zoo.vercel.app/,https://www.instagram.com/bubble_pixels/"
             buttons="visit my zoo,instagram"
           />
         </div>

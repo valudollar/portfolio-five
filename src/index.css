@@ -52,6 +52,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  /* border: #2644ba 0.2rem solid; */
 }
 button:hover {
   /* border-color: #646cff; */
@@ -81,6 +82,6 @@ p {
 
 @media only screen and (max-width: 1080px) {
   /* button {
-    border-radius: 0px;
+    border: #2644ba 0.1rem solid;
   } */
 }
