@@ -591,6 +591,65 @@
   }
 }
 
+@media only screen and (max-width: 855px) {
+  .labeldiv {
+    background-color: #40589b;
+    visibility: hidden;
+    width: 0%;
+  }
+  .mobilelabeldiv {
+    visibility: visible;
+    background-color: #2644ba;
+    height: min-content;
+    width: min-content;
+    margin-left: 1rem;
+    margin-bottom: 0;
+  }
+  .mobilelabel {
+    color: #f9fcff;
+    padding: 0.5rem;
+  }
+  .cardscontainer {
+    width: 100%;
+  }
+  .projects {
+    height: 92rem;
+  }
+  .hello {
+    font-size: 3rem;
+    line-height: 2.1rem;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .projects {
+    height: 170rem;
+  }
+  .cardMain {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .hello {
+    /* margin-left: 1rem;
+    font-size: 2rem;
+    line-height: 1.8rem; */
+  }
+  .intro {
+    /* font-size: 1.5rem;
+    margin-left: 1rem;
+    line-height: 2rem;
+    margin-top: 0.5rem; */
+    font-size: 2rem;
+  }
+  .landing {
+    height: 25rem;
+  }
+  .landingbg {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .titletext {
     font-size: 1.5rem;
