@@ -14,6 +14,8 @@ import dino from "./assets/dino.svg";
 import key from "./assets/keycap.svg";
 import dl from "./assets/deadlift.svg";
 import pixel from "./assets/pixel.svg";
+import cat from "./assets/cat.svg";
+import valubahloo from "./assets/valubahloo.svg";
 
 function App() {
   return (
@@ -234,14 +236,14 @@ function App() {
           /> */}
           <OtherCard
             title="cat paintings"
-            // image={peer}
+            image={cat}
             tags="watercolour,painting"
             links="https://www.instagram.com/sheeshcat/"
             buttons="instagram"
           />
           <OtherCard
             title="valubahloo"
-            // image={peer}
+            image={valubahloo}
             tags="small business,polymer clay,uv resin,jewelley,keycaps"
             links="https://www.instagram.com/valubahloo"
             buttons="instagram"

@@ -148,6 +148,7 @@
   align-items: center;
   flex-wrap: wrap;
   min-height: fit-content;
+  overflow: hidden;
 }
 
 /* .work {
