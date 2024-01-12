@@ -141,7 +141,7 @@
 .projects {
   width: 100%;
   background-color: #e2e5eb;
-  height: 100rem;
+  height: 163rem;
   position: relative;
   display: flex;
   justify-content: center;
@@ -494,7 +494,7 @@
 
 @media only screen and (max-width: 1090px) {
   .projects {
-    height: 86rem;
+    height: 142rem;
   }
 
   .label {
@@ -614,7 +614,7 @@
     width: 100%;
   }
   .projects {
-    height: 92rem;
+    height: 146rem;
   }
   .hello {
     font-size: 3rem;
@@ -624,7 +624,7 @@
 
 @media only screen and (max-width: 770px) {
   .projects {
-    height: 170rem;
+    height: 250rem;
   }
   .cardMain {
     margin-top: 1rem;
@@ -712,7 +712,7 @@
     margin-bottom: 0.5rem;
   }
   .projects {
-    height: 165rem;
+    height: 245rem;
   }
   .other {
     height: 90rem;

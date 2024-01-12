@@ -16,6 +16,9 @@ import dl from "./assets/deadlift.svg";
 import pixel from "./assets/pixel.svg";
 import cat from "./assets/cat.svg";
 import valubahloo from "./assets/valubahloo.svg";
+import airsim from "./assets/airsim.svg";
+import tss from "./assets/tss.svg";
+import aiforgood from "./assets/aiforgood.svg";
 
 function App() {
   return (
@@ -143,24 +146,42 @@ function App() {
                 buttons="make a quest,github"
               />
             </div>
-            {/* <div className="cardsdiv"> */}
-            {/* <Card
-                title="dinosaur quiz game"
-                tags="react,js,user study,AB testing,hieuristic eval,mantine,css,mobile app"
-                image={peer}
-                subtext="HCI & AI"
-                links="https://sites.google.com/view/sds-team-4/home,https://valuportfolio2023.vercel.app/"
-                buttons="documentation,github"
-              /> */}
-            {/* <Card
-                title="airport simulation game"
-                tags="react,js,vite,vercel,css,wip"
-                image={peer}
+            <div className="cardsdiv">
+              <Card
+                title="airport delays simulation"
+                tags="CAST, R, python, excel, simulation, forecasting, scenario generation "
+                image={airsim}
+                subtext="San Diego International Airport"
+                links="https://drive.google.com/file/d/10MJLGkFGDp97mIOmbG9S4F3O4ohkR9lf/view?usp=sharing"
+                buttons="project slides"
+              />{" "}
+              <Card
+                title="forest change detection"
+                tags="nextjs, tailwindcss, SegmentAnything, vercel, sentinel 2, earth engine "
+                image={aiforgood}
+                subtext="Partnered with AiforGood"
+                links="https://forestfind.vercel.app/,https://github.com/stjianqing/aiforevil"
+                buttons="front-end prototype, github"
+              />
+            </div>
+            <div className="cardsdiv">
+              {/* <Card
+                title="intent detection chatbot"
+                tags="react,js,netlify,vite,css,pixel art,animation,wip"
+                image={dino}
                 subtext="passion project"
-                links=""
-                buttons=""
-              /> */}
-            {/* </div> */}
+                links="https://dino-master.netlify.app/,https://github.com/valudollar/dino-master"
+                buttons="play the game,github"
+              />{" "} */}
+              <Card
+                title="ai-driven task to job matching "
+                tags="nextjs,framer motion,figma,tailwindcss,js,api,onet,vercel"
+                image={tss}
+                subtext="Lee Kuan Yew Centre for Innovative Cities"
+                links="https://tss-demo-ecru.vercel.app/,https://github.com/asycodes/tss-demo"
+                buttons="prototype, github"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -199,7 +220,7 @@ function App() {
               <a href="https://drive.google.com/file/d/1g3ElCiDuqhZM3DUlwS-NPmFK4dqaECoh/view?usp=sharing">
                 <button className="infobutton">resume</button>
               </a>
-              <a href="https://drive.google.com/file/d/1e40EUTIy0DJ74HZ-9KNRANaOsmhy4EOG/view?usp=sharing">
+              <a href="http://tinyurl.com/valufoliojan2024">
                 <button className="infobutton">portfolio</button>
               </a>
             </div>
@@ -244,7 +265,7 @@ function App() {
           <OtherCard
             title="valubahloo"
             image={valubahloo}
-            tags="small business,polymer clay,uv resin,jewelley,keycaps"
+            tags="small business,polymer clay,uv resin,jewellery,keycaps"
             links="https://www.instagram.com/valubahloo"
             buttons="instagram"
           />
